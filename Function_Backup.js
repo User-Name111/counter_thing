@@ -1,5 +1,5 @@
 // 초기값 설정
-let countValues = [0,0,0,0];
+let countValues = [0,0,0,0,0];
 let totalClicks = 0;
 
 // HTML 요소를 조작하여 카운트 값을 업데이트하는 함수
@@ -34,7 +34,7 @@ function updateCounter(index, change) {
 
 // 초기화 버튼 클릭 시 호출되는 함수
 function reset() {
-    countValues = [0, 0, 0, 0];
+    countValues = [0, 0, 0, 0, 0];
     totalClicks = 0;
     for (let i = 1; i <= 4; i++) {
         updateCount(i); // 각 카운트를 초기화
