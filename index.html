@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 50px;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counter</title>
+        <style>
+            body {
+                text-align: center;
+                padding: 50px;
+            }
 
-        .counter-item {
-            display: inline-block;
-            margin: 0 20px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Counter/Probablity</h1>
+            .counter-item {
+                display: inline-block;
+                margin: 0 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Counter/Probablity</h1>
 
-    <div class="counter-item">
-        <p>no match</p>
-        <p id="count1">0</p>
-        <p id="percent1">0%</p>
-        <button onclick="updateCounter(1, 1)">+1</button>
-        <button onclick="updateCounter(1, 10)">+10</button>
-        <button onclick="updateCounter(1, -1)">-1</button>
-        <button onclick="updateCounter(1, -10)">-10</button>
-    </div>
+        <div class="counter-item">
+            <p>no match</p>
+            <p id="count1">0</p>
+            <p id="percent1">0%</p>
+            <button onclick="updateCounter(1, 1)">+1</button>
+            <button onclick="updateCounter(1, 10)">+10</button>
+            <button onclick="updateCounter(1, -1)">-1</button>
+            <button onclick="updateCounter(1, -10)">-10</button>
+        </div>
 
-    <div class="counter-item">
-        <p>2 match</p>
-        <p id="count2">0</p>
-        <p id="percent2">0%</p>
-        <button onclick="updateCounter(2, 1)">+1</button>
-        <button onclick="updateCounter(2, 10)">+10</button>
-        <button onclick="updateCounter(2, -1)">-1</button>
-        <button onclick="updateCounter(2, -10)">-10</button>
-    </div>
+        <div class="counter-item">
+            <p>2 match</p>
+            <p id="count2">0</p>
+            <p id="percent2">0%</p>
+            <button onclick="updateCounter(2, 1)">+1</button>
+            <button onclick="updateCounter(2, 10)">+10</button>
+            <button onclick="updateCounter(2, -1)">-1</button>
+            <button onclick="updateCounter(2, -10)">-10</button>
+        </div>
 
-    <div class="counter-item">
-        <p>3 match</p>
-        <p id="count3">0</p>
-        <p id="percent3">0%</p>
-        <button onclick="updateCounter(3, 1)">+1</button>
-        <button onclick="updateCounter(3, 10)">+10</button>
-        <button onclick="updateCounter(3, -1)">-1</button>
-        <button onclick="updateCounter(3, -10)">-10</button>
-    </div>
+        <div class="counter-item">
+            <p>3 match(not777)</p>
+            <p id="count3">0</p>
+            <p id="percent3">0%</p>
+            <button onclick="updateCounter(3, 1)">+1</button>
+            <button onclick="updateCounter(3, 10)">+10</button>
+            <button onclick="updateCounter(3, -1)">-1</button>
+            <button onclick="updateCounter(3, -10)">-10</button>
+        </div>
 
-    <div class="counter-item">
-        <p>Serial(ex:1,2,3 or 4,3,2)</p>
-        <p id="count4">0</p>
-        <p id="percent4">0%</p>
-        <button onclick="updateCounter(4, 1)">+1</button>
-        <button onclick="updateCounter(4, 10)">+10</button>
-        <button onclick="updateCounter(4, -1)">-1</button>
-        <button onclick="updateCounter(4, -10)">-10</button>
-    </div>
+        <div class="counter-item">
+            <p>777jackpot</p>
+            <p id="count4">0</p>
+            <p id="percent4">0%</p>
+            <button onclick="updateCounter(4, 1)">+1</button>
+            <button onclick="updateCounter(4, 10)">+10</button>
+            <button onclick="updateCounter(4, -1)">-1</button>
+            <button onclick="updateCounter(4, -10)">-10</button>
+        </div>
 
-    <p>Total Values: <span id="totalClicks">0</span></p>
-    <button onclick="reset()">reset</button>
+        <div class="counter-item">
+            <p>Serial(ex:1,2,3)</p>
+            <p id="count5">0</p>
+            <p id="percent5">0%</p>
+            <button onclick="updateCounter(5, 1)">+1</button>
+            <button onclick="updateCounter(5, 10)">+10</button>
+            <button onclick="updateCounter(5, -1)">-1</button>
+            <button onclick="updateCounter(5, -10)">-10</button>
+        </div>
 
-    <script src="Function_Backup.js"></script>
-</body>
+        <p>Total Values: <span id="totalClicks">0</span></p>
+        <button onclick="reset()">reset</button>
+
+        <script src="Function_Backup.js"></script>
+    </body>
 </html>
