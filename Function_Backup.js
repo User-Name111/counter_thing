@@ -14,7 +14,7 @@ function updateTotalClicks() {
 
 // HTML 요소를 조작하여 확률을 업데이트하는 함수
 function updatePercent() {
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 5; i++) {
       const percent = totalClicks > 0 ? (countValues[i - 1] / totalClicks) * 100 : 0;
               document.getElementById(`percent${i}`).innerText = percent.toFixed(2) + "%";
     }
@@ -36,7 +36,7 @@ function updateCounter(index, change) {
 function reset() {
     countValues = [0, 0, 0, 0, 0];
     totalClicks = 0;
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 5; i++) {
         updateCount(i); // 각 카운트를 초기화
     }
     updateTotalClicks();
@@ -44,6 +44,6 @@ function reset() {
 }
 
 // 페이지 로드 시 초기 카운트 값 설정
-for (let i = 1; i <= 4; i++) {
+for (let i = 1; i <= 5; i++) {
     updateCount(i);
 }
